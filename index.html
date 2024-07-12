@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Productos - Empresa Mark</title>
+</head>
+<body>
+    <h1>Registro de Productos</h1>
+    <form id="productForm">
+        <label for="code">Código:</label>
+        <input type="text" id="code" required>
+        <br><br>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" required>
+        <br><br>
+        <label for="purchasePrice">Precio de Compra:</label>
+        <input type="number" id="purchasePrice" required>
+        <br><br>
+        <label for="type">Tipo de Producto:</label>
+        <select id="type" required></select>
+        <br><br>
+        <button type="submit">Registrar Producto</button>
+    </form>
+    <h2>Lista de Productos</h2>
+    <ul id="productList"></ul>
+
+    <script src="utils/productType.js"></script>
+    <script src="strategy/IStrategy.js"></script>
+    <script src="strategy/BeverageStrategy.js"></script>
+    <script src="strategy/GroceryStrategy.js"></script>
+    <script src="strategy/Context.js"></script>
+    <script src="state/State.js"></script>
+    <script src="state/RegisteredState.js"></script>
+    <script src="state/ReviewedState.js"></script>
+    <script src="state/SavedState.js"></script>
+    <script src="data/productData.js"></script>
+    <script src="business/productBusiness.js"></script>
+    <script src="presentation/productPresentation.js"></script>
+    <script src="utils/app.js"></script>
+</body>
+</html>
