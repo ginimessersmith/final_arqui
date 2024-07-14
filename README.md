@@ -26,7 +26,7 @@ Se ha identificado un error en la implementación del patrón State. En la imple
 
 ### Solución Propuesta
 
-Para corregir este error, se han realizado las siguientes modificaciones:
+Para corregir este error, se recomienda las siguientes modificaciones:
 
 - **Implementación de la Función `impedirRetroceso`**: Se ha añadido una nueva función en las clases heredadas del patrón State para evitar que el estado retroceda.
 - **Refactorización del Código**: Asegurar que todas las clases que implementan el patrón State incluyan ambas funciones: `avanzarEstado` y `impedirRetroceso`.
